@@ -18,12 +18,39 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb)); */
+  height: 100vh;
+}
+
+/* .hidden-scrollbar {
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+  }
+} */
+
+.hidden-scrollbar::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.hidden-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hidden-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
 }
 
 @layer utilities {
