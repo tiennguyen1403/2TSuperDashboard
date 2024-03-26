@@ -22,6 +22,7 @@ const Sidebar = () => {
       </Link>
       <div className="flex-1">
         <Listbox
+          aria-label="Sidebar navigator menu"
           variant="flat"
           classNames={{ base: "h-full" }}
           itemClasses={{ base: "py-3 px-6 gap-4 text-[#64748B]", title: "text-base font-medium" }}
@@ -70,6 +71,7 @@ const Sidebar = () => {
       </div>
       <div>
         <Listbox
+          aria-label="Sidebar support menu"
           variant="flat"
           itemClasses={{ base: "py-3 px-6 gap-4 text-[#64748B]", title: "text-base font-medium" }}
         >
