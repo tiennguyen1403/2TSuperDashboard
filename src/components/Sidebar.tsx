@@ -6,6 +6,7 @@ import { Listbox, ListboxItem } from "@nextui-org/react";
 import {
   Briefcase,
   Chart2,
+  Code,
   Element3,
   LogoutCurve,
   Setting2,
@@ -66,6 +67,14 @@ const Sidebar = () => {
             startContent={<User color="#697689" variant="Bulk" />}
           >
             Users
+          </ListboxItem>
+          <ListboxItem
+            href="/lodash"
+            key="lodash"
+            color="primary"
+            startContent={<Code color="#697689" />}
+          >
+            Lodash
           </ListboxItem>
         </Listbox>
       </div>
