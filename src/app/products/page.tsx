@@ -119,13 +119,13 @@ const products = [
 
 const Products = () => {
   return (
-    <div className="bg-white h-full rounded-xl py-6 px-8 shadow-custom-1 flex flex-col gap-6 overflow-hidden">
+    <div className="product-container">
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <h3 className="text-2xl font-bold">Product List</h3>
           <p className="text-grey-scale-400 text-sm">Detailed information about your products</p>
         </div>
-        <Button className="gap-1" size="lg" color="primary" startContent={<Add color="#ffffff" />}>
+        <Button className="gap-1" color="primary" startContent={<Add color="#ffffff" />}>
           New Product
         </Button>
       </div>
@@ -136,7 +136,7 @@ const Products = () => {
         selectionMode="multiple"
         aria-label="Products table"
         classNames={{
-          base: "max-h-[585px] overflow-scroll hidden-scrollbar",
+          base: "max-h-[800px] overflow-scroll hidden-scrollbar",
           th: "text-base font-normal text-grey-scale-400",
           td: "text-base font-medium",
         }}

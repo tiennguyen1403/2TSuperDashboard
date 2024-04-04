@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/scss/style.scss";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Providers } from "./providers";

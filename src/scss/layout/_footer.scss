@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+//Footer
+footer {
+  width: 100%;
+
+  &.dark {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+//Footer Buttons
+footer .btn {
+  color: $red;
+}

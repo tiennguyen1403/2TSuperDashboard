@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+@use "abstracts";
+@use "vendors";
+@use "base";
+@use "utilities";
+@use "components";
+@use "pages";
+@use "themes";
+@use "layout";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hidden-scrollbar {
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+  }
+}
+
+body {
+  background-color: white;
+  background-image: url("../../public/app-background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1 1 0%;
+  padding-block: 24px;
+  padding-left: 12px;
+  padding-right: 36px;
+  overflow: hidden;
+}

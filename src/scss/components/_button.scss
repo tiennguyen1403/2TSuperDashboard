@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+//Button
+.btn {
+  display: block;
+  color: $red;
+  border-color: transparent;
+  background-color: $primary-50;
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+//Alternate Button
+.btn.alt {
+  color: $blue;
+}

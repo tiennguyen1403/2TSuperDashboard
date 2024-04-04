@@ -1,0 +1,25 @@
+.sidebar-container {
+  padding: 24px;
+  .sidebar-wrapper {
+    height: 100%;
+    width: 300px;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 24px 16px 12px;
+      .logo-text {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  }
+}

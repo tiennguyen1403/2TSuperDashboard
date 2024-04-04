@@ -7,7 +7,6 @@ const PrivateLayout = ({ children }: Readonly<{ children: React.ReactNode }>) =>
     <div className="h-full flex overflow-hidden">
       <Sidebar />
       <div className="flex-1 flex flex-col">
-        <Header />
         <div className="main-content">{children}</div>
       </div>
     </div>

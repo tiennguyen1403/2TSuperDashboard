@@ -7,6 +7,7 @@ const Dashboard = () => {
     <>
       <h1>Hello, Next.js!</h1>
       <Button color="primary">Click me</Button>
+      <button className="btn">Hello world</button>
     </>
   );
 };
